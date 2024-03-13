@@ -1,0 +1,236 @@
+/*Обнуление*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Nanum+Gothic:regular,700,800);
+@import url(https://fonts.googleapis.com/css?family=Lexend+Exa:100,200,300,regular,500,600,700,800,900);
+
+.header {
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(/img/backgorung\ img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80px;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+.header-logo {
+    font-family: Lexend Exa;
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_main {
+    width: 100%;
+    margin: auto;
+    padding: 0 100px 0 40px;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    display: flex;
+    z-index: 3;
+}
+
+.menu {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    align-self: stretch;
+}
+
+.header_burger {
+    display: none;
+}
+
+.menu_list {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+    width: 100%
+}
+
+.menu_link {
+    color: #ffffff90;
+    font-family: NanumGothic;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 140%;
+}
+
+.menu_link:hover {
+    color: #ffffff;
+}
+
+.menu_link.selected {
+    color: #ffffff;
+}
+
+@media (max-width: 430px) {
+    .header {
+        height: 52px;
+    }
+
+    .header_main {
+        padding: 0px 16px;
+    }
+
+    .menu {
+        width: 100vw;
+        position: absolute;
+        top: -100px;
+        left: 0;
+        background-color: rgba(17, 17, 17, 0.6);
+        padding: 16px 48px;
+    }
+    .menu.show {
+        top: 100%;
+    }
+
+    .menu_link {
+        font-size: 14px;
+        text-transform: uppercase;
+    }
+
+    .header-logo {
+        font-family: Lexend Exa;
+        font-size: 16px;
+        color: white;
+        font-weight: 700;
+        z-index: 3;
+    }
+
+    .header_burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        z-index: 3;
+    }
+
+    .header_burger span {
+        position: absolute;
+        background-color: white;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+    }
+
+    .header_burger::before,
+    .header_burger::after {
+        content: '';
+        background-color: white;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+    }
+
+    .header_burger::before {
+        top: 0;
+    }
+
+    .header_burger::after {
+        bottom: 0;
+    }
+    
+
+}

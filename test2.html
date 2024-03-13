@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:regular,700,800" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lexend+Exa:100,200,300,regular,500,600,700,800,900"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Noto+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="https://kit.fontawesome.com/1065d4440f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--  google-translate -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/3.0.1/js.cookie.min.js"></script>
+    <script src="js/google-translate.js"></script>
+    <title>MetaMagic</title>
+</head>
+<header class="header">
+    <div class="header_main">
+        <a href="index.html" class="logo">
+            <div class="header-logo">Meta Magic</div>
+        </a>
+        <div class="header_burger">
+            <span></span>
+        </div>
+        <nav class="menu">
+            <div class="menu_item">
+                <ul class="menu_list">
+                    <li>
+                        <a href="index.html" class="menu_link selected">About</a>
+                    </li>
+                    <li>
+                        <a href="IMC.html" class="menu_link">2025 IMC</a>
+                    </li>
+                    <li>
+                        <a href="Contact.html" class="menu_link">Contact</a>
+                    </li>
+                    <li id="languageMenu">
+                        <a class="menu_link">Language</a>
+                        <div class="language">
+                            <img src="img/free-icon-united-states-206626.png" alt="en" data-google-lang="en" class="language__img">
+                            <img src="img/free-icon-flag-14009840.png" alt="vi" data-google-lang="vi" class="language__img">
+                            <img src="img/free-icon-flag-14009804.png" alt="ko" data-google-lang="ko" class="language__img">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<body class="is-preload">
+    <main class="wrapper">
+        <section class="video">
+            <video class="main-video" src="img/Comp 1.mp4" muted autoplay playsinline></video>
+        </section>
+        <script>
+            var video = document.querySelector('.main-video');
+            function playVideoWithPause() {
+                if (!video.paused && !video.ended) {
+                    video.pause();
+                    video.currentTime = 0;
+                }
+                setTimeout(function () {
+                    video.play();
+                }, 3000);
+            }
+            video.addEventListener('ended', function () {
+                playVideoWithPause();
+            });
+            playVideoWithPause();
+        </script>
+        <section class="nav">
+            <div class="scrollable-wrapper">
+                <nav class="home-nav">
+                    <ul class="list">
+                        <li>
+                            <a href="#introduction" class="link">Introduction</a>
+                        </li>
+                        <li>
+                            <a href="#2" class="link">GREETING</a>
+                        </li>
+                        <li>
+                            <a href="#3" class="link">LEADERSHIP</a>
+                        </li>
+                        <li>
+                            <a href="#4" class="link">VISION</a>
+                        </li>
+                        <li>
+                            <a href="#5" class="link">MAGIC COIN</a>
+                        </li>
+                        <li>
+                            <a href="#6" class="link">Partnership</a>
+                        </li>
+                    </ul>
+            </div>
+            </nav>
+        </section>
+        <section id="introduction" class="introduction">
+            <div class="introduction_text" id="introText">
+                <h1>Introduction</h1>
+                <h3>MetaMagic is the magical platform service of state-of-the-art IT technology that creates
+                    happiness and joy.</h3>
+                <p>With the advancement of smartphones, various streaming and social media platforms <br> provide video
+                    content. Among them, magic is the most beloved content.</p>
+                <p>MetaMagic allows you to select and distribute magical content on your smartphone, <br> including
+                    world-first magic and exceptional magic performances, thereby generating revenue.</p>
+            </div>
+        </section>
+        <section class="box">
+            <div class="content">
+                <div class="content-box">
+                    <h1>01 <br>
+                        Viewer-driven <br>
+                        Magic Content </h1>
+                    <p>There is no magic streaming program anywhere in the world where viewers can directly select
+                        magicians. MetaMagic is a link that allows users to get closer to the world of magic. You can
+                        watch,
+                        learn, follow, and distribute never-before-seen magical streams created by world-famous
+                        magicians in
+                        real-time.</p>
+                </div>
+                <div class="content-box">
+                    <h1>02 <br>
+                        Viewer-selected <br>
+                        Magic Contests </h1>
+                    <p>In magic contests, viewers can participate in voting. Unlike hidden magic contests by a minority
+                        of
+                        magicians, contests unfold globally in real-time using blockchain technology, allowing viewers
+                        to
+                        directly vote for the winners. Scores from around the world are transparently disclosed without
+                        deception. If the magician you voted for wins, you can earn a tremendous amount of coins.</p>
+                </div>
+                <div class="content-box">
+                    <h1>03 <br>
+                        Magic Prosumer </h1>
+                    <p>Become a new concept of prosumer where both those who upload magic videos and those who watch
+                        them
+                        can earn money. We support you to enjoy and own amazing magic anytime, anywhere with just a
+                        smartphone. We provide a new concept service where you can earn money just by watching videos.
+                    </p>
+                </div>
+                <div class="content-box">
+                    <h1>04 <br>
+                        Become the Owner of <br>
+                        the World's Largest Magic Shop </h1>
+                    <p>You can earn money by directly distributing the world's best magic tools and introducing videos
+                        to
+                        learn. Even if you are not a magician, you become the owner of an amazing magic market where you
+                        can
+                        make money with magic. You receive revenue just by introducing it on social media.</p>
+                </div>
+                <div class="content-box">
+                    <h1>05 <br>
+                        Learn the World's Best Magic <br>
+                        Anytime, Anywhere </h1>
+                    <p>Magic is exceptional imagination. You can learn tens of thousands of the best magic tricks from
+                        the
+                        best magicians anytime, anywhere. Also, your magic is protected by copyright based on NFT and
+                        generates revenue. You can earn revenue immediately with just one video. Even if you don't have
+                        your
+                        own video, revenue is generated the moment you distribute existing videos on social media. It is
+                        the
+                        world's first magic platform where you can make money whether you are a magician or not.</p>
+                </div>
+                <div class="content-box">
+                    <h1>06 <br>
+                        Magic Communication <br>
+                        Created by Blockchain </h1>
+                    <p>You can communicate with the world's best magicians using blockchain technology. You are now a
+                        magician.</p>
+                </div>
+                <div class="content-box">
+                    <h1>07 <br>
+                        Magic Coin System </h1>
+                    <p>Through charging Reward Points and Magic Coins, virtual currencies, users can use them within the
+                        platform like cash, and through the Magic Exchange, it becomes possible to exchange them for
+                        global coins such as Bitcoin or Ethereum. Users can stay within the MetaMagic platform, securing
+                        Reward Points through ad viewing and participating in various promotions, completing a circular
+                        coin system using them.</p>
+                </div>
+                <div class="content-box">
+                    <h1>08 <br>
+                        Hybrid Revenue System Based <br>on NFT-Clipto Format </h1>
+                    <p>MetaMagic platform provides a differentiated live commerce solution. Magicians and commerce users
+                        share videos they upload on other platforms (SNS, ZALO, TICTIK, YouTube, etc.), and a certain
+                        profit rate in MP is provided for the revenue generated from such shared content. Through this,
+                        MetaMagic users can become online marketers, enabling revenue generation for anyone. It is a
+                        platform where not only content creators but also delivery users distributing the content can
+                        generate more revenue. </p>
+                </div>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="content-box">
+                            <h1>01 <br>
+                                Viewer-driven <br>
+                                Magic Content </h1>
+                            <p>There is no magic streaming program anywhere in the world where viewers can directly
+                                select
+                                magicians. MetaMagic is a link that allows users to get closer to the world of
+                                magic. You can
+                                watch,
+                                learn, follow, and distribute never-before-seen magical streams created by
+                                world-famous
+                                magicians in
+                                real-time.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content-box">
+                            <h1>02 <br>
+                                Viewer-selected <br>
+                                Magic Contests </h1>
+                            <p>In magic contests, viewers can participate in voting. Unlike hidden magic contests by
+                                a minority
+                                of
+                                magicians, contests unfold globally in real-time using blockchain technology,
+                                allowing viewers
+                                to
+                                directly vote for the winners. Scores from around the world are transparently
+                                disclosed without
+                                deception. If the magician you voted for wins, you can earn a tremendous amount of
+                                coins.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content-box">
+                            <h1>03 <br>
+                                Magic Prosumer </h1>
+                            <p>Become a new concept of prosumer where both those who upload magic videos and those
+                                who watch
+                                them
+                                can earn money. We support you to enjoy and own amazing magic anytime, anywhere with
+                                just a
+                                smartphone. We provide a new concept service where you can earn money just by
+                                watching videos.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content-box">
+                            <h1>04 <br>
+                                Become the Owner of <br>
+                                the World's Largest Magic Shop </h1>
+                            <p>You can earn money by directly distributing the world's best magic tools and
+                                introducing videos
+                                to
+                                learn. Even if you are not a magician, you become the owner of an amazing magic
+                                market where you
+                                can
+                                make money with magic. You receive revenue just by introducing it on social media.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content-box">
+                            <h1>05 <br>
+                                Learn the World's Best Magic <br>
+                                Anytime, Anywhere </h1>
+                            <p>Magic is exceptional imagination. You can learn tens of thousands of the best magic
+                                tricks from
+                                the
+                                best magicians anytime, anywhere. Also, your magic is protected by copyright based
+                                on NFT and
+                                generates revenue. You can earn revenue immediately with just one video. Even if you
+                                don't have
+                                your
+                                own video, revenue is generated the moment you distribute existing videos on social
+                                media. It is
+                                the
+                                world's first magic platform where you can make money whether you are a magician or
+                                not.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content-box">
+                            <h1>06 <br>
+                                Magic Communication <br>
+                                Created by Blockchain </h1>
+                            <p>You can communicate with the world's best magicians using blockchain technology. You
+                                are now a
+                                magician.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content-box">
+                            <h1>07 <br>
+                                Magic Coin System </h1>
+                            <p>Through charging Reward Points and Magic Coins, virtual currencies, users can use them
+                                within the
+                                platform like cash, and through the Magic Exchange, it becomes possible to exchange them
+                                for
+                                global coins such as Bitcoin or Ethereum. Users can stay within the MetaMagic platform,
+                                securing
+                                Reward Points through ad viewing and participating in various promotions, completing a
+                                circular
+                                coin system using them.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="content-box">
+                            <h1>08 <br>
+                                Hybrid Revenue System Based <br>on NFT-Clipto Format </h1>
+                            <p>MetaMagic platform provides a differentiated live commerce solution. Magicians and
+                                commerce users
+                                share videos they upload on other platforms (SNS, ZALO, TICTIK, YouTube, etc.), and a
+                                certain
+                                profit rate in MP is provided for the revenue generated from such shared content.
+                                Through this,
+                                MetaMagic users can become online marketers, enabling revenue generation for anyone. It
+                                is a
+                                platform where not only content creators but also delivery users distributing the
+                                content can
+                                generate more revenue. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <section id="2" class="GREETING">
+            <div class="greeting-box">
+                <div class="title">GREETING</div>
+                <div class="chairman">
+
+                    <div class="intro">
+                        <img src="img/chairman.png" alt="">
+                        <div class="prof">Conference Chairman</div>
+                        <div class="name"><span>HYUNJIN</span>HAM</div>
+                        <h2>(JINNY HAM)</h2>
+                        <div class="country">
+                            <p>KOREA</p>
+                            <h6>CHAIRMAN OF KOREA EDUCATION MAGIC ASSOCIATION</h6>
+                        </div>
+                    </div>
+                    <div class="chairman-text">
+                        <div class="name">Encountering Magic <span>Whenever, Wherever</span></div>
+                        <p>All 8 billion people in the world have the right to happiness. We are enjoying the benefits
+                            of IT advancement and multimedia evolution through the small tool called a smartphone.
+                            Blockchain, artificial intelligence, and virtual reality can all be fully enjoyed within a
+                            smartphone. <br>
+                            <br>
+                            Meta Magic is the most beloved and cherished comprehensive art of humanity. It has evolved
+                            from the center of magicians with a 5000-year history to magic enjoyed by everyone with a
+                            smartphone. <br>
+                            <br>
+                            Magic, which was once simply watched and enjoyed, has evolved into something that people can
+                            imitate and enjoy, and further into an era where magic can be distributed and determined by
+                            oneself. It marks the beginning of the world's first magic platform where users can request
+                            magic from magicians, choose magicians, and earn money and invest just by watching magic.
+                            <br>
+                            <br>
+                            For the first time ever, magic that has never been seen before and has not been shown on any
+                            streaming service can unfold, and people can vote and invest in their works. <br>
+                            <br>
+                            The Meta Magic Universe absorbs the development of the platform and smart devices at the
+                            fastest pace and ultimately can become the ultimate magic-exclusive theater in the universe.
+                            You can watch and communicate with them from anywhere, even from the VIP lounge without
+                            having to take a plane. With just a smartphone, even penguins in Antarctica can become
+                            users, and elders on the Ganges can enjoy and watch magic while earning money and receiving
+                            investments by showcasing their own magic. <br>
+                            <br>
+                            You will be happy. If you have only enjoyed amateur magic on platforms like YouTube or
+                            TikTok, now try creating the ultimate happiness in true magic and fantasy. This is Meta
+                            Magic. <br>
+                            <br>
+                            Best,
+                        </p>
+                        <button class="read-more-btn">READ MORE </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="3" class="member">
+            <div class="member-box">
+                <div class="title">OUR LEADERSHIP MEMBER</div>
+                <div class="leader">
+                    <div class="leader-box">
+                        <img src="img/Ellipse 9.png" alt="">
+                        <div class="prof">VICE Chairman</div>
+                        <div class="member-name"><span>MyeongSu</span>JIN <br>
+                            <p>(Vũ Văn Hoàng Anh)</p>
+                        </div>
+                        <div class="member-country">
+                            <p>VIETNAM</p>
+                        </div>
+                    </div>
+                    <div class="leader-box">
+                        <img src="img/Ellipse 10.png" alt="">
+                        <div class="prof">ART DIRECTOR</div>
+                        <div class="member-name"><span>YONGMAN</span>KIM</div>
+                        <div class="member-country">
+                            <p>KOREA</p>
+                        </div>
+                    </div>
+                    <div class="leader-box">
+                        <img src="img/Ellipse 11.png" alt="">
+                        <div class="prof">advisory committee member</div>
+                        <div class="member-name"><span>INKYU</span>LEE</div>
+                        <div class="member-country">
+                            <p>KOREA</p>
+                        </div>
+                    </div>
+                    <div class="leader-box">
+                        <img src="img/Ellipse 14.png" alt="">
+                        <div class="prof">advisory committee member</div>
+                        <div class="member-name"><span>JUNO</span>KIM</div>
+                        <div class="member-country">
+                            <p>KOREA</p>
+                        </div>
+                    </div>
+                    <div class="leader-box">
+                        <img src="img/Ellipse 12.png" alt="">
+                        <div class="prof">MAGIC DIRECTOR</div>
+                        <div class="member-name"><span>KUMA</span></div>
+                        <div class="member-country">
+                            <p>KOREA</p>
+                        </div>
+                    </div>
+                    <div class="leader-box">
+                        <img src="img/Ellipse 13.png" alt="">
+                        <div class="prof">ASIA branch chief</div>
+                        <div class="member-name"><span>WEE</span>KIEN <span>MENG</span></div>
+                        <div class="member-country">
+                            <p>SINGAPORE</p>
+                            <h6>AMN ASIA MAGIC NETWORK</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="another">
+                    <div class="leader-box">
+                        <img src="img/Ellipse 115.png" alt="">
+                        <div class="prof">Manager in Hanoi</div>
+                        <div class="member-name"><span>Hav</span>van <span>tan</span><br>
+                            <p>(Hà văn tân)</p>
+                        </div>
+                        <div class="member-country">
+                            <p>VIETNAM</p>
+                        </div>
+                    </div>
+                    <div class="leader-box">
+                        <img src="img/Ellipse 16.png" alt="">
+                        <div class="prof">Stylist in Hanoi</div>
+                        <div class="member-name"><span>Le</span>Thi <span>Thanh</span>Huyen<br>
+                            <p>(Lê Thị Thanh Huyền)</p>
+                        </div>
+                        <div class="member-country">
+                            <p>VIETNAM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="4" class="vision">
+            <div class="vision-box">
+                <div class="topic">
+                    <div class="vision-title">Vision
+                    </div>
+                    <div class="vision-text">
+                        <p>
+                            <span>MetaMagic is a magical platform service that connects people and IT
+                                technology.</span><br>
+                            <br>
+                            With the advancement of IT technology, there are various social media platforms in the
+                            world,
+                            and through various online programs utilizing technology, people communicate and share with
+                            each
+                            other. <br>
+                            <br>
+                            However, there is no program in this world that deals with the world of magic that cannot be
+                            explained by science. From magic that was looked upon with curious eyes full of curiosity
+                            when
+                            we were young, to magic dinner shows encountered well into middle age, the realm of magic
+                            knows
+                            no bounds.MetaMagic utilizes IT technology to bridge the gap between magic and reality,
+                            allowing
+                            users to watch magic streams from magicians around the world, follow them, and even
+                            participate
+                            in contests where they can vote directly.By leveraging blockchain technology, as long as you
+                            have a mobile phone, you can easily access and enjoy magic anytime, anywhere. <br>
+                            <br>
+                        </p>
+                        <span>Magic is imagination <br>
+                            Magic is a universal language of communication</span> <br>
+                        <br>
+                        MetaMagic will be the medium that connects you to the whole world and the future. <br>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="5" class="magic-coin">
+            <div class="coin">
+                <div class="coin_title">Magic Coin System</div>
+                <p>Meta Magic (MM) operates the Magic Coin (MC) system. Within MM, it encourages the use of Magic Points
+                    (MP) instead of cards or cash. Users can recharge MP at the Magic Charging Station and collect
+                    reward MP through various promotional activities. Accumulated MP in the electronic wallet can be
+                    utilized to purchase magic props, daily necessities, fashion items, goods (vouchers), etc., from the
+                    Magic Shopping Mall. Additionally, users can promote their channels, purchase thousands of paid
+                    contents and subscriptions at the International Magic Carnival (IMC), and help those in need through
+                    the donation center.</p><br><br>
+                <p>Furthermore, at the Magic Coin Exchange, users can convert their held MPoints into MCoin, which can
+                    then be exchanged for cryptocurrencies such as Bitcoin, Ethereum, etc. Through this, Meta Magic (MM)
+                    will also serve as a more efficient global hyper-chain-based coin exchange center.</p>
+            </div>
+            <div class="magic-img">
+                <img class="coin-img" src="img/Frame 101 (1).png" alt="">
+            </div>
+            <img class="mobile-img" src="img/Wireframe - 8.png" alt="">
+            <div class="recharge">
+                <div class="coin_title">How to Recharge Magic coin(mp)</div>
+                <p>At MetaMagic (MM), you can recharge your MC (MP) through the following methods:</p>
+                <div class="methods">
+                    <div class="method-box">
+                        <img src="img/Frame 103.png" alt="">
+                    </div>
+                    <div class="method-box">
+                        <img src="img/Frame 104.png" alt="">
+                    </div>
+                    <div class="method-box">
+                        <img src="img/Frame 105.png" alt="">
+                    </div>
+                    <div class="method-box">
+                        <img src="img/Group 2941.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="6" class="partnership">
+            <div class="partnership-box">
+                <div class="title">PARTNERSHIP</div>
+                <div class="partnership-img">
+                    <figure class="overlay">
+                        <img src="img/KEMA.png" alt="">
+                        <figcaption><span>KEMA</span>
+                            <p>KOrean education magic assocication</p>
+                        </figcaption>
+                    </figure>
+                    <a href="https://www.magician.org/" target="_blank">
+                        <figure class="overlay">
+                            <img src="img/Frame 48.png" alt="">
+                            <figcaption><span>IBM</span>
+                                <p>The international brotherhood of magicians</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="https://www.imsmagic.com/index.html" target="_blank">
+                        <figure class="overlay">
+                            <img src="img/image 7.png" alt="">
+                            <figcaption><span>IMS</span>
+                                <p>international magicians society</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="https://www.magicsam.com/" target="_blank">
+                        <figure class="overlay">
+                            <img src="img/Frame 50.png" alt="">
+                            <figcaption><span>SAM</span>
+                                <p>The Society of American Magicians</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div class="partnership-img">
+                    <figure class="overlay">
+                        <img src="img/Frame 54.png" alt="">
+                        <figcaption><span>MAGIC TRIZ</span>
+                        </figcaption>
+                    </figure>
+                    <a href="https://nippon-magic-foundation.org/home/jcma/" target="_blank">
+                        <figure class="overlay">
+                            <img src="img/Frame 51.png" alt="">
+                            <figcaption><span>JCMA</span>
+                                <p>Japan Close-up Magicians’ Association</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="https://fism.org/" target="_blank">
+                        <figure class="overlay">
+                            <img src="img/image 10.png" alt="">
+                            <figcaption><span>FISM</span>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <a href="http://www.jejecomms.com/" target="_blank">
+                        <figure class="overlay">
+                            <img src="img/image 10 (1).png" alt="">
+                            <figcaption><span>JEJE COMMS</span>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <button id="scrollToTopBtn"><svg width="26" height="26" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10.9998 4.01562L10.3825 3.39831L10.9998 2.78099L11.6171 3.39831L10.9998 4.01562ZM11.8728 17.1109C11.8728 17.593 11.482 17.9839 10.9998 17.9839C10.5177 17.9839 10.1268 17.593 10.1268 17.1109L11.8728 17.1109ZM5.1444 8.6364L10.3825 3.39831L11.6171 4.63294L6.37903 9.87104L5.1444 8.6364ZM11.6171 3.39831L16.8552 8.6364L15.6206 9.87103L10.3825 4.63294L11.6171 3.39831ZM11.8728 4.01562L11.8728 17.1109L10.1268 17.1109L10.1268 4.01562L11.8728 4.01562Z" fill="white"/>
+            </svg></button>
+        <footer>
+            <div class="footer">
+                <p>© 2024 Meta Magic <br>
+                    All right reserved</p>
+            </div>
+        </footer>
+    </main>
+</body>
+<script src="js/intro.js"></script>
+<script src="js/burger.js"></script>
+<script src="js/nav_button.js"></script>
+<script src="js/mobile-slider.js"></script>
+<script src="js/scrollToTop.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</html>
